@@ -1,0 +1,104 @@
+* {
+vertical-align: baseline; 	
+font-weight: inherit; 	
+font-family: sans-serif; 	
+font-style: inherit; 	
+font-size: 100%; 	
+border: 0 none; 	
+outline: 0; 	
+padding: 0; 	
+margin: 0; 	
+}
+
+body{
+	border: 20px solid gray;
+	height: 800px;
+	width: 1450px;
+	background: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.selectarena{
+	border: 5px solid silver;
+	width: 280px;
+	height: 150px;
+	margin-top: 280px;
+	margin-left: 510px;
+	padding: 30px;
+	background-color: gray;
+	padding-left: 60px;
+	opacity: .7;
+	position: absolute;
+}
+
+.selectplayers{
+	border: 5px solid silver;
+	width: 280px;
+	height: 150px;
+	margin-top: 280px;
+	margin-left: 510px;
+	padding: 30px;
+	background-color: gray;
+	padding-left: 60px;
+	opacity: .7;
+	position: absolute;
+	display: none;
+}
+
+.playeronepic{
+	height: 360px;
+	width: 285px;
+	position: absolute;
+	margin-top: 350px;
+	margin-left: 150px;
+}
+
+.playertwopic{
+	height: 360px;
+	width: 285px;
+	position: absolute;
+	margin-top: 350px;
+	margin-left: 980px;
+}
+
+.leftimage{
+	position: absolute;
+	display: inline-block;
+
+}
+
+.rightimage{
+	position: absolute;
+	display: inline-block;
+	transform: scaleX(-1);
+    filter: FlipH;
+}
+
+select{
+	margin-top: 10px;
+}
+
+h1{
+	font-size: 30px;
+	text-shadow: 3px 3px 3px white;
+	color: orange;
+	margin-left: 40px;
+	margin-bottom: 10px;
+
+}
+
+button{
+	border-radius: 10px;
+	height: 50px;
+	width: 80px;
+	background-color: white;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+img{
+	width: 100%;
+	background-repeat: none;
+
+}

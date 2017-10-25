@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dojo Arena</title>
+	<style type="text/css"></style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		$(document).ready(function(){
+
+			// hover over the buttons to change the background
+			
+			$(".beach").hover(function(){
+				$("body").css("background-image", "url(beach.jpg)");
+			});
+
+			$(".planet").hover(function(){
+				$("body").css("background-image", "url(earth.jpg)");
+			});
+
+			$(".dojo").hover(function(){
+				$("body").css("background-image", "url(dojo.jpg)");
+			});
+
+			$(".forest").hover(function(){
+				$("body").css("background-image", "url(forest.jpg)");
+			});
+
+			$(".matrix").hover(function(){
+				$("body").css("background-image", "url(matrix.jpg)");
+			});
+
+			$(".snow").hover(function(){
+				$("body").css("background-image", "url(snow.jpg)");
+			});
+
+			// hide and show the arena and player select divs
+
+			$("button").click(function(){
+				$(".selectarena").hide()
+			});
+
+			$("button").click(function(){
+				$(".selectplayers").show()
+			});
+
+			$(".beach").click(function(){
+				$("body").css("background-image", "url(beach.jpg)");
+			});
+
+			$(".planet").click(function(){
+				$("body").css("background-image", "url(earth.jpg)");
+			});
+
+			$(".dojo").click(function(){
+				$("body").css("background-image", "url(dojo.jpg)");
+			});
+
+			$(".forest").click(function(){
+				$("body").css("background-image", "url(forest.jpg)");
+			});
+
+			$(".matrix").click(function(){
+				$("body").css("background-image", "url(matrix.jpg)");
+			});
+
+			$(".snow").click(function(){
+				$("body").css("background-image", "url(snow.jpg)");
+			});
+
+			// 	$(".playerone").change(function(){
+			// 		$(".playeronepic").css("background", "url(raphael.png)");
+			// 	});
+			
+
+			// function displayVals(){
+			// 	var image = $(".playerone").val();
+			// 	$(".playeronepic").html(image)
+			// }
+
+
+				$(".playerone").click(function(){
+					var x = $(".playerone").val();
+					$('.leftimage').attr('src', x);
+				});
+
+				$(".playertwo").click(function(){
+					var x = $(".playertwo").val();
+					$('.rightimage').attr('src', x);
+				});
+
+		})
+	</script>
+</head>
+<body>
+
+		<div class="selectarena">
+			<h1>Select Arena</h1>
+			<button class="beach">beach</button>
+			<button class="planet">planet</button>
+			<button class="dojo">dojo</button>
+			<button class="forest">forest</button>
+			<button class="matrix">matrix</button>
+			<button class="snow">snow</button>
+		</div>
+		
+		<div class="selectplayers">
+			<h1>Select Players</h1>
+			<select class="playerone">
+				<option value="SelectNinja">Select Ninja</option>
+				<option value="raphael.png">Raphael</option>
+				<option value="mikey.png">Michaelangelo</option>
+				<option value="leo.png">Leonardo</option>
+				<option value="donny.png">Donatello</option>
+			</select>
+			<select class="playertwo">
+				<option value="SelectNinja">Select Ninja</option>
+				<option value="raphael.png">Raphael</option>
+				<option value="mikey.png">Michaelangelo</option>
+				<option value="leo.png">Leonardo</option>
+				<option value="donny.png">Donatello</option>
+			</select>
+		</div>
+
+		<div class="playeronepic">
+			<img src="" alt="" class="leftimage">
+		</div>
+
+		<div class="playertwopic">
+			<img src="" alt="" class="rightimage">
+		</div>
+
+
+</body>
+</html>
